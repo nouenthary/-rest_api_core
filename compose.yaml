@@ -1,0 +1,7 @@
+﻿services:
+  rest_api_core:
+    image: rest_api_core
+    build:
+      context: .
+      dockerfile: rest_api_core/Dockerfile
+
