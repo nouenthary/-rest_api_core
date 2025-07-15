@@ -22,4 +22,14 @@ public class HomeController : Controller
             message = "Hello World"
         });
     }
+
+    [HttpGet("message")]
+    public IActionResult Message()
+    {
+        return Json(new
+        {
+            message = "success",
+            code = 200
+        });
+    }
 }
