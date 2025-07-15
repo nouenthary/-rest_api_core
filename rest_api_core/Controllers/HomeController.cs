@@ -14,10 +14,10 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    [HttpGet]
+   [HttpGet]
     public IActionResult Index()
     {
-        return Json(new
+        return Ok(new
         {
             message = "Hello World"
         });
@@ -26,10 +26,11 @@ public class HomeController : Controller
     [HttpGet("message")]
     public IActionResult Message()
     {
-        return Json(new
+        return Ok(new
         {
             message = "success",
             code = 200
         });
     }
+    
 }
